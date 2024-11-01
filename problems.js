@@ -21,9 +21,18 @@ console.log(total);
 
 
 
+//problem-2
 
-
-
-
-
-
+function checkName(name){
+  if(typeof name !=='string'){
+    return 'invalid';
+  }
+  for(let i of "ayieouAYIEOUW"){
+    if(name.endsWith(i)){
+      return 'good name';
+    } 
+}
+  return 'bad name';
+}
+const output = checkName('Salman');
+console.log(output);
