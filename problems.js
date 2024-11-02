@@ -24,7 +24,7 @@
 //problem-2
 
 // function checkName(name){
-//   if(typeof name !=='string'){
+//   if(name !=='string'){
 //     return 'invalid';
 //   }
 //   for(let i of "ayieouAYIEOUW"){
@@ -34,7 +34,7 @@
 // }
 //   return 'bad name';
 // }
-// const output = checkName('Salman');
+// const output = checkName(199);
 // console.log(output);
 
 
@@ -42,7 +42,7 @@
 //problem-3
 
 // function deleteINvalids(array){
-//     if(!Array.isArray(array)){
+//     if(array!=='array'){
 //       return 'invalid Array';
 //     }
 
@@ -55,7 +55,7 @@
 // }
 
 
-// const numbers = deleteINvalids(['NaN',1,12,0,-1,'undefined']);
+// const numbers = deleteINvalids({num:[1,2,3]});
 // console.log(numbers);
 
 
@@ -101,14 +101,32 @@
 //Problem-5
 
 
-function monthSaving(arr){
-    
-for(const earn of arr){
-  if(earn>=3000){
-    earn = earn-(earn*20/100);
-  }
-}
-  return earn;
-}
-const saving = monthSaving(1000);
-  console.log(saving);
+// function monthSaving(arr,livingCost){
+// if(arr!=='array'){
+//   return 'invalid input';
+// }
+// else if(livingCost!=='number'){
+//   return 'invalid input';
+// }
+
+//     let tot = 0;
+// for(const earn of arr){
+//   if(earn>=3000){
+//     let totalEarn = earn - (earn * 20 / 100);
+//   tot  = tot + totalEarn;
+//   }
+//   else{
+//     tot= tot + earn;
+//   }
+  
+  
+// }
+// const total = tot - livingCost;
+
+// if(total<0){
+//   return 'earn more';
+// }
+// return total;
+// }
+// const saving = monthSaving(100,[900,2700,3400]);
+//   console.log(saving);
